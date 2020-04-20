@@ -20,10 +20,12 @@ class App extends Component {
 
   saveToLocalStorage = (value) => {
     localStorage.setItem(value, value);
+    alert("Product added to wishlist");
   };
 
   removeFromLocalStorage = (value) => {
     localStorage.removeItem(value);
+    alert("Product removed from wishlist");
   };
 
   render() {
